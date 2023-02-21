@@ -29,6 +29,7 @@
 // let queue: Queue<number> = new Queue();
 
 ///////// Vedio 4 ///////////
+
 // ////Arrays
 // let array : Array<number> = [1, 2, 3, 4];
 // // anothe short way of defining an array
@@ -40,7 +41,6 @@
 // array = ['name'] //Error: this is array of numbers
 
 ////Tupple
-
 // let tupple : [number,number] = [5,6]
 
 // //usage
@@ -48,3 +48,20 @@
 // tupple = [2,5]
 // tupple = [1,1]
 // tupple = [2,4,5] // Error: must be only two items
+
+///////// Vedio 5 ///////////
+
+// //// objects
+// type Point = {x:number,y:number}
+
+// let center: Point = {
+//     x : 0,
+//     y : 0
+// }
+
+// let xAxis: Point = {
+//     x: 1,
+//     y: 0
+// }
+
+///////// Vedio 6 ///////////

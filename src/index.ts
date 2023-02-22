@@ -94,3 +94,70 @@
 
 
 ///////// Vedio 7 ///////////
+// //// DuckTyping
+
+// type Point2D = {x: number, y: number};
+// type Point3D = {x: number,y: number,z: number};
+
+// let point2D : Point2D = {x: 0, y: 0};
+// let point3D : Point3D = {x: 1, y: 1, z:1}
+
+// // since extra information is ok
+// point2D = point3D ;
+// function takesPoint2D(point:Point2D){ /* ----- */}
+// takesPoint2D(point3D)
+
+// // Error : missing information
+// point3D = point2D
+// function takesPoint3D(point:Point3D){ /* ----- */}
+// takesPoint3D(point2D)
+
+
+///////// Vedio 9 ///////////
+////Classes 
+
+// class Animals {
+//     // private name : string;
+
+//     protected name : string;
+
+//     constructor(name:string){
+//         this.name = name;
+//     }
+
+//     public move(distanceInMeters:number):void {
+//         console.log(`${this.name} moved to ${distanceInMeters}m.`)
+//     }
+// } 
+
+// let cat = new Animals('Cat');
+// cat.move(10)
+// cat.name //Error : protected
+
+// // class inheritance
+// class Birds extends Animals{
+//     fly(distanceInMeters:number):void{
+//         console.log(`${this.name} flew ${distanceInMeters}m.`)
+//     }
+// }
+
+///////// Vedio 10 ///////////
+// //// Generics
+// class Queue<T>{
+//     data = [];
+//     push(item:T) {this.data.push(item)}
+//     pop(): T {return this.data.shift() }
+// }
+
+// const queue = new Queue<number>();
+// queue.push(38)
+// queue.push(36)
+// queue.push(34)
+// queue.push(33)
+// queue.push(32)
+
+// console.log(queue.data)
+
+///////// Vedio 11 ///////////
+////Any & unknown
+

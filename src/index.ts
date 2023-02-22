@@ -161,3 +161,28 @@
 ///////// Vedio 11 ///////////
 ////Any & unknown
 
+let exampleAny : any;
+let exampleUnknown : unknown;
+
+// any
+exampleAny = 139;
+exampleAny = 'anything';
+//usage
+exampleAny.allows.anything.you.can.imagine();
+let setBool : boolean = exampleAny;
+
+
+// unknown
+exampleUnknown = 393;
+exampleUnknown = 'unknownThing';
+//usage
+
+//if you want to use it a string or boolean firstly you have to cheack its 
+// type
+if(typeof exampleUnknown == 'string'){
+    exampleUnknown.trim(); 
+}
+if(typeof exampleUnknown == 'boolean'){
+   let setUnknownBool : boolean = exampleUnknown; 
+}
+       

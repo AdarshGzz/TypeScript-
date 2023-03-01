@@ -337,3 +337,52 @@
 // console.log(Adarsh)
 
 // //////////////////////////////////////////////////////////////////////////
+
+// class User{
+//     public email:string
+//     private name:string
+//     readonly city:string = 'shahdol'
+//     constructor(email:string,name:string){
+//         this.email = email;
+//         this.name = name;
+//     }
+// }
+
+class User{
+
+    private _courseCount:number = 1
+
+    readonly city:string = 'shahdol'
+    constructor(
+        public email:string,
+        private name:string,
+        private userId :number
+        ){
+      
+    }
+    private deleteToken(){
+        console.log('token deleted');
+    }
+
+    get getAppleEmail():string { return `apple${this.email}` }
+
+    get courseCount(): number{ return this._courseCount}
+
+    set courseCount(courseNum) {
+        if(courseNum<=1){
+            throw new Error('course count should be more than 1')
+        }
+        this._courseCount = courseNum
+    }
+}
+
+const Adarsh = new User("a@a.com", 'Adarsh',77)
+console.log(Adarsh)
+
+
+class subUser extends User {
+    familyMember:string = 'brother'
+    changeCourseCount(){
+        // this._courseCount = 4
+    }
+}

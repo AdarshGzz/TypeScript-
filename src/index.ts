@@ -421,3 +421,79 @@
 //         console.log('story created')
 //     }
 // }
+
+// //////////////////////////////////////////////////////////////////
+
+// abstract class TakePhoto {
+//     constructor(
+//         public cameraMode: string,
+//         public filter: string
+//     ){}
+
+//     abstract getSepia(): void
+
+// }
+
+// class Instagram extends TakePhoto{
+//     constructor(
+//         public cameraMode: string,
+//         public filter: string,
+//         public burst: number
+//     ){
+//         super(cameraMode,filter)
+//     }
+
+//     getSepia(): void{
+//         console.log('sepia')
+//     }
+// }
+
+// let adarsh = new Instagram('64mp','blur',4)
+
+// console.log(adarsh)
+
+// //////////////////////////////////////////////////////////////////////////
+
+// // Generics
+
+const Score:Array<number> = []
+
+const score:[number] = [1]
+
+console.log(score)
+
+function identity(val:number|string):number|string{
+   return val
+}
+
+function identity1(val:any):any{
+   return val
+}
+
+function identity2<Type>(val:Type):Type{
+    return val
+}
+
+let ident = identity2(true)
+
+console.log(ident)
+
+const identity3 = <Type>(val: Type) => {
+    return val
+}
+
+interface Bottle{
+    brand:string
+    type:number
+}
+
+// function identity4<bottle>({}){}
+
+function getSearchProduct<T,>(products: T[]):T{
+    return products[3]
+}
+
+const getMoreSearchProduct = <T,>(products: T[]):T =>{
+    return products[3]
+}
+

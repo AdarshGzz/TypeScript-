@@ -348,41 +348,76 @@
 //     }
 // }
 
-class User{
+// class User{
 
-    private _courseCount:number = 1
+//     private _courseCount:number = 1
 
-    readonly city:string = 'shahdol'
-    constructor(
-        public email:string,
-        private name:string,
-        private userId :number
-        ){
+//     readonly city:string = 'shahdol'
+//     constructor(
+//         public email:string,
+//         private name:string,
+//         private userId :number
+//         ){
       
-    }
-    private deleteToken(){
-        console.log('token deleted');
-    }
+//     }
+//     private deleteToken(){
+//         console.log('token deleted');
+//     }
 
-    get getAppleEmail():string { return `apple${this.email}` }
+//     get getAppleEmail():string { return `apple${this.email}` }
 
-    get courseCount(): number{ return this._courseCount}
+//     get courseCount(): number{ return this._courseCount}
 
-    set courseCount(courseNum) {
-        if(courseNum<=1){
-            throw new Error('course count should be more than 1')
-        }
-        this._courseCount = courseNum
-    }
-}
+//     set courseCount(courseNum) {
+//         if(courseNum<=1){
+//             throw new Error('course count should be more than 1')
+//         }
+//         this._courseCount = courseNum
+//     }
+// }
 
-const Adarsh = new User("a@a.com", 'Adarsh',77)
-console.log(Adarsh)
+// const Adarsh = new User("a@a.com", 'Adarsh',77)
+// console.log(Adarsh)
 
 
-class subUser extends User {
-    familyMember:string = 'brother'
-    changeCourseCount(){
-        // this._courseCount = 4
-    }
-}
+// class subUser extends User {
+//     familyMember:string = 'brother'
+//     changeCourseCount(){
+//         // this._courseCount = 4
+//     }
+// }
+
+// //////////////////////////////////////////////////////////////////
+
+// interface TakePhoto {
+//     cameraMode: string
+//     filter: string
+//     burst: number
+// }
+
+// interface Story{
+//     createStory():void
+// }
+
+// class instagram implements TakePhoto {
+//     constructor(
+//         public cameraMode: string,
+//         public filter: string,
+//         public burst: number
+//     ){
+
+//     }   
+// }
+
+// class youtube implements TakePhoto, Story{
+//     constructor(
+//         public cameraMode: string,
+//         public filter: string,
+//         public burst: number,
+//         public shorts: string,
+
+//     ){}
+//     createStory(): void {
+//         console.log('story created')
+//     }
+// }
